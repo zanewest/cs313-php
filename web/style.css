@@ -1,0 +1,158 @@
+
+    <style>
+        #goal {
+            font-size: 23px;
+            background-color: black;
+            color: #ddd;
+            border-style: groove;
+            width: 40%;
+            margin: auto;
+            padding: 0px 15px;
+        }
+        
+        #rightalign {
+            text-align: left;
+            width: 20%;
+            margin-left: 70%;
+        }
+    </style>
+h1 {
+    font-size: 35px;
+    background-color: black;
+    text-align: center;
+    color: #ddd;
+    border-style: groove;
+    width: 40%;
+    margin: auto;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 15px;
+}
+
+h2 {
+    font-size: 35px;
+    background-color: black;
+    text-align: center;
+    color: #ddd;
+    margin: auto;
+    font-family: "Lucida Console", Monaco, monospace;
+    margin-bottom: -10px;
+}
+
+#rationale {
+    font-size: 23px;
+    background-color: black;
+    color: #ddd;
+    border-style: groove;
+    width: 40%;
+    margin: auto;
+    padding: 15px;
+}
+
+#banner {
+    margin-bottom: 0px;
+    background-color: black;
+    padding: 0;
+    text-align: left;
+}
+
+body {
+    background-image: url("http://i.imgur.com/m4sC6h1.jpg");
+    margin: 0;
+    min-width: 1150px;
+}
+
+.links {
+    width: 100%;
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 600;
+    background-color: #172d45;
+    text-align: center;
+}
+
+p {
+    margin: 20px 20px 20px 20px;
+}
+
+a {
+    color: #ddd;
+    text-decoration: none;
+    height: 100%;
+}
+
+a:hover {
+color:blue;}
+
+table,
+td,
+th {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+td {
+    margin-left: -20px;
+    width: 25%;
+}
+
+#signature {
+    font-family: 'Monotype Corsiva', 'Apple Chancery', 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    font-size: 30px;
+    font-style: italic;
+}
+
+#basic {
+    font-size: 18px;
+    background-color: black;
+    text-align: left;
+    color: #ddd;
+    border-style: groove;
+    width: 40%;
+    margin: auto;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding: 15px;
+}
+
+#goback {
+    color: #026273;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    width: 40%;
+    margin: auto;
+    border-style: groove;
+    border-color: white;
+    padding: 15px;
+    text-align: center;
+    display: block;
+}
+
+#textlink {
+    text-decoration: underline;
+}
+
+#u {
+    text-decoration: underline;
+}
+
+#users {
+    text-align: right;
+    
+}
+
+label {
+    color:white;
+    
+}
+
+.alert
+{
+    color:white;
+    
+}
+
+.notice {
+    color:white;
+    
+}
