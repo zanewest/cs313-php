@@ -1,21 +1,19 @@
+#goal {
+    font-size: 23px;
+    background-color: black;
+    color: #ddd;
+    border-style: groove;
+    width: 40%;
+    margin: auto;
+    padding: 0px 15px;
+}
 
-    <style>
-        #goal {
-            font-size: 23px;
-            background-color: black;
-            color: #ddd;
-            border-style: groove;
-            width: 40%;
-            margin: auto;
-            padding: 0px 15px;
-        }
-        
-        #rightalign {
-            text-align: left;
-            width: 20%;
-            margin-left: 70%;
-        }
-    </style>
+#rightalign {
+    text-align: left;
+    width: 20%;
+    margin-left: 70%;
+}
+
 h1 {
     font-size: 35px;
     background-color: black;
@@ -81,7 +79,8 @@ a {
 }
 
 a:hover {
-color:blue;}
+    color: blue;
+}
 
 table,
 td,
@@ -138,21 +137,16 @@ td {
 
 #users {
     text-align: right;
-    
 }
 
 label {
-    color:white;
-    
+    color: white;
 }
 
-.alert
-{
-    color:white;
-    
+.alert {
+    color: white;
 }
 
 .notice {
-    color:white;
-    
+    color: white;
 }
