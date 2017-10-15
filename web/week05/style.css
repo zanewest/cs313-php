@@ -1,0 +1,28 @@
+#rightFloat {
+	display: inline-block;
+	margin-left: 50px;
+	height: inherit;
+    vertical-align: middle;
+    color: white;
+}
+
+#leftFloat {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#banner {
+    background-color: #005005;
+    margin-left: -10;
+    margin-right: -10;
+    border: none;
+}
+
+body {
+    background-color: #60ac5d;
+}
+
+#product {
+color: white;
+display: inline;
+}
