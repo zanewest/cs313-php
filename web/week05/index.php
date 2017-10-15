@@ -14,7 +14,7 @@ function get_db() {
 		$dbPort = $dbopts["5432"];
 		$dbUser = $dbopts["gymwblcnmjdaqd"];
 		$dbPassword = $dbopts["3802346cf03391ca22c0e54f3b73cb317263ed98acebcdc9d92c36f014be32bc"];
-		$dbName = ltrim($dbopts["path"],'/');
+		$dbName = ltrim($dbopts["postgresql-round-75038"],'/');
 		// Create the PDO connection
 		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 		// this line makes PDO give us an exception when there are problems, and can be very helpful in debugging!
