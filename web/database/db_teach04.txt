@@ -1,0 +1,27 @@
+CREATE DATABASE teach04DB;
+
+CREATE TABLE user (
+    userid INT,
+    username VARCHAR(20),
+    password VARCHAR(20),
+    email VARCHAR(40)
+);
+
+CREATE TABLE speaker (
+    speakerid INT,
+    speaker_name VARCHAR(20)
+);
+
+CREATE TABLE conference (
+    conferenceid INT,
+    conference_month VARCHAR(10),
+    conference_year INT
+);
+
+CREATE TABLE note (
+    noteid INT,
+    speakerid INT,
+    conferenceid INT,
+    userid INT,
+    note_text TEXT;
+);
