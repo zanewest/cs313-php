@@ -40,7 +40,7 @@
        
         //this isn't working and I can't figure out why, status 500 when I run it. :(
         require("dbConnect.php");
-        
+    
         $sql = 'INSERT INTO comments(username, body) VALUES(:username, :body)';
         $stmt = $this->pdo->prepare($sql);
         
@@ -51,7 +51,7 @@
         // execute the insert statement
         $stmt->execute();
         
-        $commentId = $db->lastInsertId("comments_id_seq");
+       // $commentId = $db->lastInsertId("comments_id_seq");
          }
     }
     catch (Exception $ex)
