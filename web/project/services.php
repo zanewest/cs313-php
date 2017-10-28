@@ -3,6 +3,7 @@
 <head>
     <title>Services</title>
     <?php 
+    $activeTab = 1;
     include("head.html");
     ?>
 </head>

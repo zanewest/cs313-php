@@ -4,6 +4,7 @@
 <head>
     <title>Reviews</title>
     <?php 
+    $activeTab = 3;
     include("head.html");
     ?>
 </head>
@@ -28,47 +29,16 @@
 
     <?php include("footer.html");?>
 
-    <?php 
-    try{
-        
-        if (isset($_POST['username'], $_POST['body'])) {
-        $username = $_POST['username'];
-        $body = $_POST['body'];
-        
-        echo '<div class="container"><div class="panel panel-default panel-body" style="background: #fbf6e5;"><table class="table"><tr><td class="col-xs-2">' . $username . '</td>';
-        echo '<td>' . $body . '</td></tr></table></div></div>';
-       
-        //this isn't working and I can't figure out why, status 500 when I run it. :(
-        require("dbConnect.php");
-    
-        $sql = 'INSERT INTO comments(username, body) VALUES(:username, :body)';
-        $stmt = $this->pdo->prepare($sql);
-        
-        // pass values to the statement
-        $stmt->bindValue(':username', $username);
-        $stmt->bindValue(':body', $body);
-        
-        // execute the insert statement
-        $stmt->execute();
-        
-       // $commentId = $db->lastInsertId("comments_id_seq");
-         }
-    }
-    catch (Exception $ex)
-    {
-        echo "Error with DB. Details: $ex";
-        die();
-    }
-    ?>
+   
 
-    <form class="container" action="reviews.php" method="POST">
+    <form class="container" id="mainForm" action="insertReview.php" method="POST">
         <div class="form-group">
             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" name="username">
         </div>
         <div class="form-group">
             <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Comments" rows="3" name="body"></textarea>
         </div>
-        <input type="submit" value="Submit">
+        <input class="btn btn-lg btn-secondary btn-block" style="background-color: grey; color: white;" type="submit" value="Submit">
     </form>
 
 

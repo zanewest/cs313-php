@@ -4,6 +4,7 @@
 <head>
     <title>Consulting</title>
     <?php 
+    $activeTab = 1;
     include("head.html");
     ?>
     <meta charset="utf-8">

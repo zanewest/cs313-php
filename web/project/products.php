@@ -3,6 +3,7 @@
 <head>
     <title>Products</title>
     <?php 
+    $activeTab = 1;
     include("head.html");
     ?>
 </head>
@@ -21,6 +22,7 @@
                     session_set_cookie_params(60 * 24, '/');
                     session_start();
                     }
+
                 //connect to DB
                 require('dbConnect.php');
                 //prepare statement for security

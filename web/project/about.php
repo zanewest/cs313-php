@@ -4,6 +4,7 @@
 <head>
     <title>About</title>
      <?php 
+    $activeTab = 4;
     include("head.html");
     ?>
     <meta charset="utf-8">

@@ -1,4 +1,3 @@
-
 <?php
 /**********************************************************
 * File: signIn.php
@@ -57,43 +56,55 @@ if (isset($_POST['txtUser']) && isset($_POST['txtPassword']))
 // should just see the login form.
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Sign In</title>
-</head>
+    <!DOCTYPE html>
+    <html>
 
-<body>
-<div>
+    <head>
+        <title>Sign In</title>
+        <?php 
+        $activeTab = 5;
+    include("head.html");
+    ?>
+    </head>
 
-<?php
+    <body>
+        <?php 
+    include("header.html");
+    ?>
+        <div class="container center" style="max-width: 300px; margin-left: auto; margin-right: auto;">
+
+            <?php
 if ($badLogin)
 {
 	echo "Incorrect username or password!<br /><br />\n";
 }
 ?>
 
-<h1>Please sign in below:</h1>
+                <div class="center">
+                    <img src="img/logo.png" class="rounded img-fluid img-responsive" style="max-width: 300px; margin-left: auto; margin-right: auto;" alt="Responsive image">
+                </div>
 
-<form id="mainForm" action="signIn.php" method="POST">
+                <h1>Sign In</h1>
 
-	<input type="text" id="txtUser" name="txtUser" placeholder="Username">
-	<label for="txtUser">Username</label>
-	<br /><br />
+                <form id="mainForm" action="home.php" method="POST">
 
-	<input type="password" id="txtPassword" name="txtPassword" placeholder="Password">
-	<label for="txtPassword">Password</label>
-	<br /><br />
 
-	<input type="submit" value="Sign In" />
+                    <input type="text" class="form-control form-top" id="txtUser" name="txtUser" placeholder="Username">
+                    <br />
 
-</form>
 
-<br /><br />
+                    <input type="password" class="form-control form-bottom" id="txtPassword" name="txtPassword" placeholder="Password">
 
-Or <a href="signUp.php">Sign up</a> for a new account.
+                    <br />
 
-</div>
+                    <input class="btn btn-lg btn-secondary btn-block" style="background-color: grey; color: white;" type="submit" value="Sign In" />
 
-</body>
-</html>
+                </form>
+
+                <br /> Or <a href="signUp.php">Sign up</a> for a new account.
+
+        </div>
+        <?php include("footer.html");?>
+    </body>
+
+    </html>
